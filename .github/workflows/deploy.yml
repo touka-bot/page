@@ -1,8 +1,8 @@
-- name: Blazing fast GitHub Pages deploys
+
 
   uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
 
-name: Blazing fast GitHub Pages deploy
+name: deploy
 
 on:
 
