@@ -14,13 +14,13 @@
     const shared = urlParams.get('s');
     let webUrl
     if (shared != null) {
-        let r = Math.floor((Math.random() * 3) + 1);
-        if(r = 1)
+        const r = Math.floor((Math.random() * 3) + 1);
+        if(r == 1)
             webUrl = `https://touka-bot.github.io/page/generated/${shared}/`;
-        else if(r = 2)
+        else if(r == 2)
             webUrl = `https://touka-bot.github.io/page/generated/${shared}`;
         else
-            webUrl = `https://touka-bot.github.io/page/generated/${shared}/index.html`;
+            webUrl == `https://touka-bot.github.io/page/generated/${shared}/index.html`;
         isThere(webUrl);
     }else {
         window.location.replace("https://github.com/touka-bot/page/");
