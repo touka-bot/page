@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mainFontThin;
+  }
+  
+  html {
+    background-color: #23272A;
+  }
+  
+  .videocontent video {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    position: flex;
+    margin: auto;
+    width: 1600px;
+    height: 900px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .videocontent h1 {
+    position: absolute;
+    width: 1600px;
+    height: 900px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    position: flex;
+    margin: auto;
+    padding-top: 950px;
+    padding-right: 950px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: mainFontThin;
+  }
+  
+  .videocontent p {
+    position: absolute;
+    width: 1600px;
+    height: 900px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    position: flex;
+    margin: auto;
+    padding-top: 1050px;
+    padding-right: 950px;
+    text-decoration: none;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  
+  @font-face {
+    font-family: mainFontThin;
+      src: url(../cdn/fonts/Uni\ Sans\ Thin.otf);
+  }
