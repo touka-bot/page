@@ -14,6 +14,7 @@
     const shared = urlParams.get('s');
     if (shared != null) {
         const webUrl = `https://touka-bot.github.io/page/generated/${shared}/`;
+        isThere(webUrl);
     }
 
     function isThere(url) {
@@ -24,10 +25,6 @@
             //  do something
         else
             window.location.reload();
-    }
-
-    function checkSite() {
-        isThere(webUrl);
     }
 </script>
 
