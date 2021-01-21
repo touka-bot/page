@@ -15,16 +15,19 @@
     if (shared != null) {
         const webUrl = `https://touka-bot.github.io/page/generated/${shared}/`;
         isThere(webUrl);
+    }else {
+        window.location.replace("https://github.com/touka-bot/page/);
     }
 
     function isThere(url) {
         var http = new XMLHttpRequest();
         http.open('HEAD', url, false);
         http.send();
-        if (http.status != 404)
+        if (http.status != 404) {
             window.location.replace(webUrl);
-        else
+        }else {
             window.location.reload();
+        }
     }
 </script>
 
