@@ -15,14 +15,14 @@
     let webUrl
     if (shared != null) {
         const r = Math.floor((Math.random() * 3) + 1);
-        if(r == 1)
+        if (r == 1)
             webUrl = `https://touka-bot.github.io/page/generated/${shared}/`;
-        else if(r == 2)
+        else if (r == 2)
             webUrl = `https://touka-bot.github.io/page/generated/${shared}`;
         else
             webUrl = `https://touka-bot.github.io/page/generated/${shared}/index.html`;
         isThere(webUrl);
-    }else {
+    } else {
         window.location.replace("https://github.com/touka-bot/page/");
     }
 
@@ -32,9 +32,14 @@
         http.send();
         if (http.status != 404) {
             window.location.replace(webUrl);
-        }else {
-            window.location.reload();
+        } else {
+            cache_clear();
         }
+    }
+
+    function cache_clear() {
+        window.location.reload(true);
+        // window.location.reload(); use this if you do not remove cache
     }
 </script>
 
