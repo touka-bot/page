@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generating Page...</title>
+</head>
+<!-- onload="waitUntilReady();"" -->
+
+<body>
+</body>
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const shared = urlParams.get('s');
+    let webUrl
+    if (shared != null) {
+        const r = Math.floor((Math.random() * 3) + 1);
+        if(r == 1)
+            webUrl = `https://touka-bot.github.io/page/generated/${shared}/`;
+        else if(r == 2)
+            webUrl = `https://touka-bot.github.io/page/generated/${shared}`;
+        else
+            webUrl = `https://touka-bot.github.io/page/generated/${shared}/index.html`;
+        isThere(webUrl);
+    }else {
+        window.location.replace("https://github.com/touka-bot/page/");
+    }
+
+    function isThere(url) {
+        var http = new XMLHttpRequest();
+        http.open('HEAD', url, false);
+        http.send();
+        if (http.status != 404) {
+            window.location.replace(webUrl);
+        }else {
+            window.location.replace(`https://touka-bot.github.io/page/redirect?s=${shared}`);
+        }
+    }
+</script>
+
+</html>
