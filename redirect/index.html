@@ -14,41 +14,20 @@
     const shared = urlParams.get('s');
     if (shared != null) {
         const webUrl = `https://touka-bot.github.io/page/generated/${shared}/`;
-        setTimeout(checkSite(), 5000);
     }
 
     function isThere(url) {
-        var req = new AJ(); // XMLHttpRequest object
-        try {
-            req.open("HEAD", url, false);
-            req.send(null);
-            return req.status == 200 ? true : false;
-        } catch (er) {
-            return false;
-        }
-    }
-
-    function AJ() {
-        var obj;
-        if (window.XMLHttpRequest) obj = new XMLHttpRequest();
-        else if (window.ActiveXObject) {
-            try {
-                obj = new ActiveXObject('MSXML2.XMLHTTP.3.0');
-            } catch (er) {
-                try {
-                    obj = new ActiveXObject("Microsoft.XMLHTTP");
-                } catch (er) {
-                    obj = false;
-                }
-            }
-        }
-        return obj;
+        var http = new XMLHttpRequest();
+        http.open('HEAD', url, false);
+        http.send();
+        if (http.status != 404)
+            //  do something
+        else
+            window.location.reload();
     }
 
     function checkSite() {
-        if (isThere(webUrl))
-            window.location.replace(webUrl);
-        setTimeout(checkSite(), 5000);
+        isThere(webUrl);
     }
 </script>
 
