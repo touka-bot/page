@@ -14,7 +14,7 @@
     const shared = urlParams.get('s');
     let webUrl
     if (shared != null) {
-        webUrl = `https://touka-bot.github.io/page/generated/${shared}/`;
+        webUrl = `https://touka-bot.github.io/page/generated/${shared}/index.html`;
         isThere(webUrl);
     }else {
         window.location.replace("https://github.com/touka-bot/page/");
