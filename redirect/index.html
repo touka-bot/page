@@ -34,7 +34,7 @@
         if (http.status != 404) {
             window.location.replace(webUrl);
         } else {
-            cache_clear();
+            setTimeout(cache_clear, 5000);
         }
     }
 
