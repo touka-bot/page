@@ -12,7 +12,7 @@
   .videocontent video {
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%, -50%);
     position: flex;
     margin: auto;
@@ -26,7 +26,7 @@
     width: 1600px;
     height: 900px;
     left: 50%;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%, -50%);
     position: flex;
     margin: auto;
@@ -43,7 +43,7 @@
     width: 1600px;
     height: 900px;
     left: 50%;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%, -50%);
     position: flex;
     margin: auto;
@@ -56,5 +56,5 @@
   
   @font-face {
     font-family: mainFontThin;
-      src: url(../fonts/Uni\ Sans\ Thin.otf);
+      src: url(../cdn/fonts/Uni\ Sans\ Thin.otf);
   }
