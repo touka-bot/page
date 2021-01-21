@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Redirecting...</title>
+</head>
+<!-- onload="waitUntilReady();"" -->
+
+<body>
+</body>
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const shared = urlParams.get('s');
+    if (shared != null) {
+        const webUrl = `https://touka-bot.github.io/page/generated/${shared}/`;
+        isThere(webUrl);
+    }
+
+    function isThere(url) {
+        var http = new XMLHttpRequest();
+        http.open('HEAD', url, false);
+        http.send();
+        if (http.status != 404)
+            window.location.replace(webUrl);
+        else
+            window.location.reload();
+    }
+</script>
+
+</html>
