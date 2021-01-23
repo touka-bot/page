@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>heya camp%e2%96%b3 - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch heya camp%e2%96%b3 - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>heya camp%e2%96%b3 - EPISODE 1</h1>
+            <p>The Outclub goes on a journey! The Outdoor Activities Club, Aka, the Outclub has 3 members. In the countryside of Yamanashi Prefecture, there's a high school named Motosu High School. Go even further to one of the school buildings and you'll find a very laid-back outdoor club that uses one corner of the classroom as their club room. Kagamihara Nadeshiko finally wants to kill some time in their club room, but then Ohgaki Chiaki and Inuyama Aoi suddenly announce that they're all going on a trip. They drag the confused Nadeshiko with them and the Outclub hustles all through Yamanashi. The girls enjoy the various local treats as they travel around, but where in the world is the end destination for this trip?! .</p>
+            <video src="https://mountainoservoo002.animecdn.com/Heya-Camp/Heya-Camp-Episode-01-1080p.mp4" controls>
+                <source src="https://mountainoservoo002.animecdn.com/Heya-Camp/Heya-Camp-Episode-01-1080p.mp4">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://mountainoservoo002.animecdn.com/Heya-Camp/Heya-Camp-Episode-01-1080p.mp4";
+    const secondary = "https://mountainoservoo002.animecdn.com/Heya-Camp/Heya-Camp-Episode-01-1080p.mp4";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1611388878578')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
