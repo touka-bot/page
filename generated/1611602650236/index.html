@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>god eater - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch god eater - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>god eater - EPISODE 1</h1>
+            <p>The year is 2071. Humanity has been pushed to the brink of extinction following the emergence of man-eating monsters called "Aragami" that boast an immunity to conventional weaponry. They ravaged the land, consuming almost everything in their path and leaving nothing in their wake. To combat them, an organization named Fenrir was formed as a last-ditch effort to save humanity through the use of "God Eaters"—special humans infused with Oracle cells, allowing them to wield the God Arc, the only known weapon capable of killing an Aragami. One such God Eater is Lenka Utsugi, a New-Type whose God Arc takes the form of both blade and gun. Now, as one of Fenrir's greatest weapons, Lenka must master his God Arc if he is to fulfill his desire of wiping out the Aragami once and for all. The monsters continue to be born en masse while the remnants of humanity struggle to survive the night. Only God Eaters stand between the Aragami and complete and total annihilation of the human race..</p>
+            <video src="https://v1.4animu.me/God-Eater/God-Eater-Episode-01-1080p.mp4" controls>
+                <source src="https://mountainoservoo002.animecdn.com/God-Eater/God-Eater-Episode-01-1080p.mp4">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://v1.4animu.me/God-Eater/God-Eater-Episode-01-1080p.mp4";
+    const secondary = "https://mountainoservoo002.animecdn.com/God-Eater/God-Eater-Episode-01-1080p.mp4";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1611602650236')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
