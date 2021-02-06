@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>kemono jihen - 4</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch kemono jihen - EPISODE 4 on FLUID.">
+    <meta name="author" content="FLUID">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>kemono jihen - EPISODE 4</h1>
+            <p>When a series of animal bodies that rot away after a single night begin appearing in a remote mountain village, Inugami, a detective from Tokyo who specializes in the occult, is called to investigate. While working the case, he befriends a strange boy who works in the field every day instead of going to school. Shunned by his peers and nicknamed "Dorota-bou" after a yokai that lives in the mud, he helps Inugami uncover the truth behind the killings—but supernatural forces are at work, and while Dorota-bou is just a nickname, it might not be the only thing about the boy that isn't human..</p>
+            <video src="https://mountainoservoo002.animecdn.com/Kemono-Jihen/Kemono-Jihen-Episode-04-1080p.mp4" controls>
+                <source src="https://mountainoservoo002.animecdn.com/Kemono-Jihen/Kemono-Jihen-Episode-04-1080p.mp4">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://mountainoservoo002.animecdn.com/Kemono-Jihen/Kemono-Jihen-Episode-04-1080p.mp4";
+    const secondary = "https://mountainoservoo002.animecdn.com/Kemono-Jihen/Kemono-Jihen-Episode-04-1080p.mp4";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1612619765856')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
