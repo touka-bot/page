@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>rosario to vampire - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch rosario to vampire - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>rosario to vampire - EPISODE 1</h1>
+            <p>Youkai Academy is a seemingly normal boarding school, except that its pupils are monsters learning to coexist with humans. All students attend in human form and take normal academic subjects, such as literature, gym, foreign language, and mathematics. However, there is one golden rule at Youkai Academy—all humans found on school grounds are to be executed immediately! Tsukune Aono is an average teenager who is unable to get into any high school because of his bad grades. His parents inadvertently enroll him into Youkai Academy as a last-ditch effort to secure his education. As Tsukune unknowingly enters this new world, he has a run-in with the most attractive girl on campus, Moka Akashiya. Deciding to stay in the perilous realm in order to further his relationship with Moka, he does not realize that beneath her beauty lies a menacing monster—a vampire. Rosario to Vampire is a supernatural school comedy that explores Tsukune's romantic exploits, experiences, and misadventures with a bevy of beautiful but dangerous creatures..</p>
+            <video src="https://v7.4animu.me/Rosario-to-Vampire/Rosario-to-Vampire-Episode-01-1080p.mp4" controls>
+                <source src="https://mountainoservoo002.animecdn.com/Rosario-to-Vampire/Rosario-to-Vampire-Episode-01-1080p.mp4">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://v7.4animu.me/Rosario-to-Vampire/Rosario-to-Vampire-Episode-01-1080p.mp4";
+    const secondary = "https://mountainoservoo002.animecdn.com/Rosario-to-Vampire/Rosario-to-Vampire-Episode-01-1080p.mp4";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1612921169279')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
