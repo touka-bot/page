@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>young black jack - 7</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch young black jack - EPISODE 7 on FLUID.">
+    <meta name="author" content="FLUID">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>young black jack - EPISODE 7</h1>
+            <p>In the 1960s, a gifted young medical student tries to make a name for himself. Kuroo Hazama is a reserved young man with unusual black-and-white hair, a body covered with scars, and a dark past. Despite only being a medical student, his surgical brilliance starts to attract attention after he completes a seemingly impossible operation. Together with the spirited and honest intern Maiko Okamoto and Yabu, a close friend with a troubled life, Hazama devotes himself to the world of medicine. However, his path to becoming a respectable surgeon is a difficult one as student riots, war, and corruption are consuming Japan. Hazama quickly finds himself caught up in a series of nefarious circumstances that challenge his integrity as a person and his path towards becoming a surgeon. Young Black Jack chronicles the story of a man capable of performing unthinkable feats of medicine, and the journey that leads him to become the legend known as Black Jack. .</p>
+            <video src="https://v7.4animu.me/Young-Black-Jack/Young-Black-Jack-Episode-07-1080p.mp4" controls>
+                <source src="https://mountainoservoo002.animecdn.com/Young-Black-Jack/Young-Black-Jack-Episode-07-1080p.mp4">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://v7.4animu.me/Young-Black-Jack/Young-Black-Jack-Episode-07-1080p.mp4";
+    const secondary = "https://mountainoservoo002.animecdn.com/Young-Black-Jack/Young-Black-Jack-Episode-07-1080p.mp4";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1612986408953')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
