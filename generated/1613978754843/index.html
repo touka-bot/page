@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hokuto no ken - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch hokuto no ken - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>hokuto no ken - EPISODE 1</h1>
+            <p>In the year 19XX, after being betrayed and left for dead, bravehearted warrior Kenshirou wanders a post-apocalyptic wasteland on a quest to track down his rival, Shin, who has kidnapped his beloved fiancée Yuria. During his journey, Kenshirou makes use of his deadly fighting form, Hokuto Shinken, to defend the helpless from bloodthirsty ravagers. It isn't long before his exploits begin to attract the attention of greater enemies, like warlords and rival martial artists, and Keshirou finds himself involved with more than he originally bargained for. Faced with ever-increasing odds, the successor of Hokuto Shinken is forced to put his skills to the test in an effort to take back what he cares for most. And as these new challenges present themselves and the battle against injustice intensifies, namely his conflict with Shin and the rest of the Nanto Seiken school of martial arts, Kenshirou is gradually transformed into the savior of an irradiated and violent world. .</p>
+            <video src="https://v5.4animu.me/Hokuto-no-Ken/Hokuto-no-Ken-Episode-01-1080p.mp4" controls>
+                <source src="https://v5.4animu.me/Hokuto-no-Ken/Hokuto-no-Ken-Episode-01-1080p.mp4">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://v5.4animu.me/Hokuto-no-Ken/Hokuto-no-Ken-Episode-01-1080p.mp4";
+    const secondary = "https://v5.4animu.me/Hokuto-no-Ken/Hokuto-no-Ken-Episode-01-1080p.mp4";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1613978754843')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
