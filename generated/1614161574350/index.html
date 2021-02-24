@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ranpo kitan game of laplace - 6</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch ranpo kitan game of laplace - EPISODE 6 on FLUID.">
+    <meta name="author" content="FLUID">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>ranpo kitan game of laplace - EPISODE 6</h1>
+            <p>After what appears to be just another ordinary day, middle school student Yoshio Kobayashi wakes up in his classroom to make a terrifying discovery: his teacher has been mutilated, and Yoshio happens to be holding the weapon used to commit the crime. Despite the initial shock of finding himself in this predicament, the curious and detached Yoshio can't help but be secretly thrilled about this attempt to frame him. His put-upon friend Souji Hashiba is turned into a willing accomplice, and together, they are determined to prove Yoshio's innocence. Additionally, Kogorou Akechi, a genius high school detective, has come to the scene of the crime in order investigate the case and when Kogorou meets the young man found guilty, an intense mutual interest sparks between the two of them. Kobayashi wishes to enter Akechi's world of crime solving as his assistant, and Akechi is determined to see if the enthusiastic boy is up to the challenge. Ranpo Kitan: Game of Laplace is a surreal mystery and horror anime that contains brutal and bizarre crimes, loosely based on stories written by Ranpo Edogawa, who is famous for his influence on Japanese fiction..</p>
+            <video src="https://v7.4animu.me/Ranpo-Kitan-Game-of-Laplace/Ranpo-Kitan-Game-of-Laplace-Episode-06-1080p.mp4" controls>
+                <source src="https://v7.4animu.me/Ranpo-Kitan-Game-of-Laplace/Ranpo-Kitan-Game-of-Laplace-Episode-06-1080p.mp4">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://v7.4animu.me/Ranpo-Kitan-Game-of-Laplace/Ranpo-Kitan-Game-of-Laplace-Episode-06-1080p.mp4";
+    const secondary = "https://v7.4animu.me/Ranpo-Kitan-Game-of-Laplace/Ranpo-Kitan-Game-of-Laplace-Episode-06-1080p.mp4";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1614161574350')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
