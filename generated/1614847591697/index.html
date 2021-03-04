@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>gakuen babysitters - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch gakuen babysitters - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+    <script data-ad-client="ca-pub-8649101915011823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>gakuen babysitters - EPISODE 1</h1>
+            <p>After losing both parents in a fatal plane crash, teenager Ryuuichi Kashima must adjust to his new life as the guardian of his younger brother Kotarou. Although Ryuuichi is able to maintain a friendly and kindhearted demeanor, Kotarou is a reserved toddler still too young to understand the reality of the situation. At their parents' funeral, they are approached by Youko Morinomiya, the stern chairman of an elite academy, who decides to take them under her care. However, there is one condition Ryuuichi must fulfill in exchange for a roof over their heads and enrolment in the school—he must become the school's babysitter. In an effort to support the female teachers at the academy, a babysitter's club was established to look after their infant children; unfortunately, the club is severely short-staffed, so now not only is Ryuuichi responsible for his little brother, but also a handful of toddlers who possess dynamic personalities..</p>
+            <video src="https://4anime.to/anime/gakuen-babysitters" controls>
+                <source src="https://4anime.to/anime/gakuen-babysitters">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://4anime.to/anime/gakuen-babysitters";
+    const secondary = "https://4anime.to/anime/gakuen-babysitters";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1614847591697')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
