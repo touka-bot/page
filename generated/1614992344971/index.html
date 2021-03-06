@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sousei no onmyouji - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch sousei no onmyouji - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+    <script data-ad-client="ca-pub-8649101915011823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>sousei no onmyouji - EPISODE 1</h1>
+            <p>Magano, a parallel realm filled with monsters known as "Kegare," is a place where exorcists deal with all impurities. Benio Adashino is a prodigy exorcist who is recognized for her strength and is summoned to Tokyo by the Exorcist Union. On her way, she plummets into the arms of Rokuro Enmadou, a young exorcist with a troubled past. But the impurities of Magano do not rest. When these two exorcists witness a couple of children stolen by a Kegare, Benio rushes to save them, dragging Rokuro along with her into Magano. Engaged in a fight she is on the verge of being defeated in, Benio is saved by Rokuro, revealing himself capable of being her rival in talent. Sousei no Onmyouji tells the story of two talented exorcists who are destined to become the "Twin Star Exorcists" and the prophesised parents of the Miko—the reincarnation of Abe no Seimei—who will cleanse the world of all impurities. .</p>
+            <video src="https://4anime.to/anime/sousei-no-onmyouji" controls>
+                <source src="https://4anime.to/anime/sousei-no-onmyouji">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://4anime.to/anime/sousei-no-onmyouji";
+    const secondary = "https://4anime.to/anime/sousei-no-onmyouji";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1614992344971')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
