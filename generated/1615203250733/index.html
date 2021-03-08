@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>mobile suit gundam 00 - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch mobile suit gundam 00 - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+    <script data-ad-client="ca-pub-8649101915011823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>mobile suit gundam 00 - EPISODE 1</h1>
+            <p>In the distant future, mankind's dependence on fossil fuels will lead to their complete depletion, an energy crisis unlike anything the world witnessed. Out of retaliation and fear, humanity began focusing at an alternative source of energy: solar power. Different nations have united together to form three major factions—the Union of Solar Energy and Free Nations, the Advanced European Union, and the Human Reform League. Each of these sectors has access to a solar power generator, which gives them limitless energy. As a result, countries that were once dependent on the sale of fossil fuels are now plunged in poverty, leading to years of warfare and internal strife over the control of solar energy. Amid this chaos, an unknown paramilitary organization appeared identifying themselves as "Celestial Being," aspire to end all warfare through armed intervention by using mysterious and technologically advanced Mobile Suits known as Gundams. Mobile Suit Gundam 00 follows the story of Celestial Being's Gundam Meisters Setsuna F. Seiei, Lockon Stratos, Allelujah Haptism, and Tieria Erde. These four dive into the devastating battle between the three superpowers to accomplish their goal of changing the world..</p>
+            <video src="https://4anime.to/anime/mobile-suit-gundam-00" controls>
+                <source src="https://4anime.to/anime/mobile-suit-gundam-00">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://4anime.to/anime/mobile-suit-gundam-00";
+    const secondary = "https://4anime.to/anime/mobile-suit-gundam-00";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1615203250733')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
