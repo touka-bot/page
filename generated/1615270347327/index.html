@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ouran koukou host club - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch ouran koukou host club - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+    <script data-ad-client="ca-pub-8649101915011823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>ouran koukou host club - EPISODE 1</h1>
+            <p>Haruhi Fujioka is a bright scholarship candidate with no rank or title to speak of—a rare species at Ouran High School, an elite academy for students of high pedigree. When she opens the door to Music Room #3 hoping to find a quiet place to study, Haruhi unexpectedly stumbles upon the Host Club. Led by the princely Tamaki, the club—whose other members include the "Shadow King" Kyouya, the mischievous Hitachiin twins, and the childlike Haninozuka "Honey" and his strong protector Mori—is where handsome boys with too much time on their hands entertain the girls in the academy. In a frantic attempt to remove herself from the hosts, Haruhi ends up breaking a vase worth eight million yen and is forced into becoming the eccentric group's general errand boy to repay her enormous debt. However, thanks to her convincingly masculine appearance, her naturally genial disposition toward girls, and fascinating commoner status, she is soon promoted to full-time male host and plunged headlong into a glitzy whirlwind of elaborate cosplays, rich food, and exciting shenanigans that only the immensely wealthy Ouran Host Club can pull off. .</p>
+            <video src="https://4anime.to/anime/ouran-koukou-host-club" controls>
+                <source src="https://4anime.to/anime/ouran-koukou-host-club">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://4anime.to/anime/ouran-koukou-host-club";
+    const secondary = "https://4anime.to/anime/ouran-koukou-host-club";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1615270347327')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
