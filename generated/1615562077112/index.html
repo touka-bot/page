@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>charlotte - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch charlotte - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+    <script data-ad-client="ca-pub-8649101915011823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>charlotte - EPISODE 1</h1>
+            <p>While on the surface Yuu Otosaka appears to be just another charming and intelligent teenager, he has a secret—he has the ability to slip into people's minds and fully control their body for five seconds at a time. Yuu has been using this skill for years to gain the highest grades, which allowed him to enter a prestigious high school. When the enigmatic Nao Tomori catches Yuu using his power, she coerces him and his sister Ayumi into transferring to Hoshinoumi Academy, a school for students with supernatural abilities. The student council of the school, led by Nao, is tasked with secretly tracking down adolescents who abuse their powers. Yuu is forced to join the student council and together, they face formidable challenges that bring him closer to the shocking truth that his own, seemingly incomplete ability, might be more powerful than he could have ever imagined. An original story from Jun Maeda, creator of Angel Beats and Clannad, Charlotte explores the supernatural lives of these teenagers and the price they must pay for being special..</p>
+            <video src="https://4anime.to/anime/charlotte" controls>
+                <source src="https://4anime.to/anime/charlotte">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://4anime.to/anime/charlotte";
+    const secondary = "https://4anime.to/anime/charlotte";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1615562077112')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
