@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>tenki no ko - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch tenki no ko - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+    <script data-ad-client="ca-pub-8649101915011823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>tenki no ko - EPISODE 1</h1>
+            <p>Tokyo is currently experiencing rain showers that seem to disrupt the usual pace of everyone living there to no end. Amidst this seemingly eternal downpour arrives the runaway high school student Hodaka Morishima, who struggles to financially support himself—ending up with a job at a small-time publisher. At the same time, the orphaned Hina Amano also strives to find work to sustain herself and her younger brother. Both fates intertwine when Hodaka attempts to rescue Hina from shady men, deciding to run away together. Subsequently, Hodaka discovers that Hina has a strange yet astounding power: the ability to call out the sun whenever she prays for it. With Tokyo's unusual weather in mind, Hodaka sees the potential of this ability. He suggests that Hina should become a "sunshine girl"—someone who will clear the sky for people when they need it the most. Things begin looking up for them at first. However, it is common knowledge that power always comes with a hefty price ....</p>
+            <video src="https://4anime.to/anime/tenki-no-ko" controls>
+                <source src="https://4anime.to/anime/tenki-no-ko">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://4anime.to/anime/tenki-no-ko";
+    const secondary = "https://4anime.to/anime/tenki-no-ko";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1615589758737')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
