@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bishoujo senshi sailor moon crystal - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch bishoujo senshi sailor moon crystal - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+    <script data-ad-client="ca-pub-8649101915011823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>bishoujo senshi sailor moon crystal - EPISODE 1</h1>
+            <p>Though a little clumsy and easily brought to tears, Usagi Tsukino is a typical 14-year-old girl in her second year of junior high. However, all of that changes when an encounter with Luna, a mysterious talking black cat, whose head bears the mark of a crescent moon, results in the animal bestowing a magical brooch upon her. Now Usagi can transform into Sailor Moon, a magical girl in a sailor uniform who protects love and peace! Usagi is appointed as a guardian of justice and is tasked with the search for the legendary Silver Crystal, a magical artifact that holds immense power, as well as finding the other Sailor Guardians and the lost princess of Luna's home, the Moon Kingdom. Her mission isn't without opposition, however; Queen Beryl, ruler of the Dark Kingdom, wants to claim the Silver Crystal and take its power for her own. Though she still has to worry about her school, family, and love life, it is up to Sailor Moon and the other Sailor Guardians to save the day!.</p>
+            <video src="https://4anime.to/anime/bishoujo-senshi-sailor-moon-crystal" controls>
+                <source src="https://4anime.to/anime/bishoujo-senshi-sailor-moon-crystal">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://4anime.to/anime/bishoujo-senshi-sailor-moon-crystal";
+    const secondary = "https://4anime.to/anime/bishoujo-senshi-sailor-moon-crystal";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1615685826251')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
