@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>fairy gone - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch fairy gone - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+    <script data-ad-client="ca-pub-8649101915011823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>fairy gone - EPISODE 1</h1>
+            <p>"Once upon a time, fairies were tools of war." The story takes place in a world where fairies possess and dwell in animals, giving them mysterious abilities. By removing the organs of a possessed animal and transplanting them into humans, fairies can be summoned as an alter ego and be used as a weapon. Such individuals who used fairies as war tools were called "Fairy Soldiers." Once the war was over and they completed their roles, the soldiers lost their purpose. Some began working for the government, some joined the mafia, and some even became terrorists, as each chose their own way to live. Nine years have passed since the war. The protagonist Mariya is a new recruit of "Dorothea," an organization which investigates and suppresses fairy-related crimes. Amidst the unstable political situation, criminals with lingering wounds from the war and past conflicts emerge and engage in terrorism as an act of revenge. This is the story of Fairy Soldiers, fighting for their own justice in a chaotic postwar world..</p>
+            <video src="https://4anime.to/anime/fairy-gone" controls>
+                <source src="https://4anime.to/anime/fairy-gone">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://4anime.to/anime/fairy-gone";
+    const secondary = "https://4anime.to/anime/fairy-gone";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1615806632699')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
