@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>princess principal - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch princess principal - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+    <script data-ad-client="ca-pub-8649101915011823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>princess principal - EPISODE 1</h1>
+            <p>In the early 20th century, the discovery of the substance Cavorite allowed the production of advanced military technology and steered the country toward conflict. London is now divided by a wall, and the Kingdom and the Commonwealth of Albion battle a silent war where espionage is the only weapon that can destabilize the enemy. A group of girls from the prestigious Queen's Mayfaire school work as undercover spies for the Commonwealth. Led by Dorothy, an experienced driver with a striking personality, their group includes the talents of Ange le Carré, a cold-blooded liar and expert sharpshooter; Chise, a proficient samurai; and Beatrice, a voice-mimicking specialist. They use their unique individual skills for the Commonwealth to survive in a dark world filled with conspiracy, mystery, and infiltration. In the shadow of the war, they have only one goal in mind: completing their mission..</p>
+            <video src="https://4anime.to/anime/princess-principal" controls>
+                <source src="https://4anime.to/anime/princess-principal">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://4anime.to/anime/princess-principal";
+    const secondary = "https://4anime.to/anime/princess-principal";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1615905584670')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
