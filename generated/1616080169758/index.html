@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ao haru ride - 1</title>
+    <link rel="stylesheet" type="text/css" href="../cdn/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn/css/header.css" />
+    <meta name="description" content="Watch ao haru ride - EPISODE 1 on FLUID.">
+    <meta name="author" content="FLUID">
+    <script data-ad-client="ca-pub-8649101915011823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../cdn/images/logo.png" style="display: inline-block;">
+            </div>
+        </div>
+        <ul>
+            <li onclick="switchHost()"><a href="">Switch Host</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=783720725848129566&permissions=8192&scope=bot">Invite</a></li>
+            <li><a href="https://discord.gg/tvDXKZSzqd">Discord</a></li>
+            <!-- <li onclick="copyShare()"><a href="">Share</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- videoContent -->
+    <div class="content">
+        <div class="videocontent">
+            <h1>ao haru ride - EPISODE 1</h1>
+            <p>Futaba Yoshioka used to be an attractive and popular middle-schooler—well liked by the opposite sex, but ostracized by the girls. Nevertheless, she was able to brush all that off, because the only opinion that truly mattered to her was that of Kou Tanaka, a classmate with whom she shared a shelter from rain once, followed by quite a few other precious and significant memories. She even succeeded at making plans to meet with the quiet and innocent boy at the summer festival, but a simple misunderstanding, and Tanaka's subsequent disappearance, left her walking the halls of her school friendless. Now in high school, Futaba is not your typical adolescent girl. Determined to become a class favorite this time, she avoids all unwanted attention and, instead of acting cute and feminine, only stands out through her tomboyish behavior and disheveled look. But still, her world is soon turned upside down when the only boy she ever liked unexpectedly comes into her life once again—except he goes by the name of Kou Mabuchi now, and it is not his name alone that has gone through a sea change..</p>
+            <video src="https://4anime.to/anime/ao-haru-ride" controls>
+                <source src="https://4anime.to/anime/ao-haru-ride">
+            </video>
+        </div>
+    </div>
+</body>
+<script>
+    var video = document.getElementsByTagName('video');
+    const primary = "https://4anime.to/anime/ao-haru-ride";
+    const secondary = "https://4anime.to/anime/ao-haru-ride";
+    let isSwitched = false;
+
+    function switchHost() {
+        if (isSwitched)
+            video[0].setAttribute("src", primary);
+        else
+            video[0].setAttribute("src", secondary);
+        isSwitched = !isSwitched;
+
+    }
+
+    function copyShare() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+
+    function copyShare() {
+        copyStringToClipboard('https://touka-bot.github.io/page/u?s=1616080169758')
+    }
+
+    function copyStringToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>
+
+</html>
